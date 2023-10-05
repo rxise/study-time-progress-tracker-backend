@@ -1,0 +1,12 @@
+POST http://localhost:3000/users
+Content-Type : application/json
+
+{
+    "discordId": "2",
+    "username": "12sdf",
+    "displayName": "32sdf",
+    "serverId": "43sf",
+    "clanName": "hunter"
+}
+
+GET http://localhost:3000/users/1

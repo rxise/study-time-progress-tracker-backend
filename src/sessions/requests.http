@@ -1,0 +1,14 @@
+POST http://localhost:3000/sessions/start
+Content-Type : application/json
+
+{
+   "userDiscordId" : "2" 
+}
+
+
+POST http://localhost:3000/sessions/stop
+Content-Type : application/json
+
+{
+   "userDiscordId" : "1" 
+}

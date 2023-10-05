@@ -1,0 +1,17 @@
+GET http://localhost:3000/clan
+
+
+POST http://localhost:3000/clan
+content-type: application/json
+
+{
+  "name": "hunter"
+}
+
+POST http://localhost:3000/clan/score
+content-type: application/json
+
+{
+  "name": "toyota"
+}
+
