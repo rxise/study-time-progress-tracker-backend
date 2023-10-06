@@ -10,6 +10,8 @@ import { Clan } from './clan/clan.entity';
 import { Session } from './sessions/sessions.entity';
 import { User } from './users/users.entity';
 import { APP_PIPE } from '@nestjs/core';
+import { ChannelsModule } from './channels/channels.module';
+import { Channel } from './channels/channels.entity';
 
 @Module({
   imports: [
@@ -25,12 +27,12 @@ import { APP_PIPE } from '@nestjs/core';
           database: config.get<string>('DB_NAME'),
           synchronize: true,
           logging: true,
-          entities: [Clan, Session, User]
+          entities: [Clan, Session, User, Channel]
         }
       }
     }),
 
-    ClanModule, UsersModule, SessionsModule],
+    ClanModule, UsersModule, SessionsModule, ChannelsModule],
   controllers: [AppController],
   providers: [AppService,
     {
